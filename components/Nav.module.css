@@ -1,6 +1,46 @@
 .nav {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
+
+.menuLink {
+  /* background-color: rgb(50, 50, 67); */
+  border-radius: 14px;
+  text-decoration: none;
+  opacity: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuLink:hover {
+  background-color: #1b1b1d;
+}
+
+.menuLink svg {
+  color: grey;
+}
+
+.menuLink p {
+  color: grey;
+}
+
+.menuLink.selected {
+  background-color: rgb(50, 50, 67);
+}
+.selected svg {
+  /* fill: hsl(240, 100%, 75%); */
+  color: hsl(240, 100%, 75%);
+}
+
+.selected p {
+  color: hsl(240, 100%, 75%);
+}
+
+/* rgb(114, 114, 121); */

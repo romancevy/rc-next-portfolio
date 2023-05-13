@@ -1,0 +1,47 @@
+.container {
+  width: 60vw;
+  margin-inline: auto;
+  display: grid;
+  gap: 20px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.external-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: hsl(226, 5%, 11%);
+  padding: 2px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.external-link:hover svg {
+  transform: scale(1.04);
+  opacity: 0.8;
+  color: powderblue;
+}
+
+.external-link svg {
+  color: rgb(114, 114, 121);
+}
