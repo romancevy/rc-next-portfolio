@@ -106,6 +106,9 @@ body {
 }
 
 .mainContainer {
+  display: grid;
+  gap: 40px;
+
   /* width: min(70ch, 100% - 4rem); */
   /* width: auto;
   min-height: 100%;
@@ -132,4 +135,10 @@ body {
   padding: 80px 40px;
   position: relative;
   width: 800px;
+}
+
+@media screen and (max-height: 765px) {
+  body {
+    padding: 40px 20px;
+  }
 }

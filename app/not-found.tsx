@@ -1,0 +1,8 @@
+export default function NotFound() {
+  return (
+    <>
+      <h2>Not all those who wander are lost, but you are.</h2>
+      <p>Could not find requested resource</p>
+    </>
+  );
+}

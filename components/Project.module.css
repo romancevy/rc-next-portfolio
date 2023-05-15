@@ -1,13 +1,12 @@
 .projectContainer {
-  width: 80vw;
-  height: 40vh;
+  width: 90vw;
   overflow: hidden;
-  background-color: blueviolet;
+  background-color: rgb(19, 25, 52);
   /* background-color: rgb(19, 25, 52); */
-  padding: 20px;
+  padding: 2.5rem;
   border-radius: 28px;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+  /* cursor: pointer; */
+  transition: all 0.3s ease-in-out;
 }
 
 .projectContainer:hover {
@@ -16,17 +15,80 @@
 .projectCard {
   width: 100%;
   height: 100%;
-  background-color: bisque;
   border-radius: 28px;
 }
 
 .imgContainer {
   position: relative;
-  width: 50vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  /* border-radius: 28px; */
 }
 
-.imgContainer img {
+.image {
   max-width: 100%;
+  height: 400px;
+  aspect-ratio: 1;
   display: block;
+  border-radius: 28px;
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: -1px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 6px;
+  /* justify-content: space-between; */
+}
+
+.dots {
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.searchBar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 12px;
+  text-align: center;
+  width: 40vw;
+}
+
+.linkIcons {
+  display: flex;
+  gap: 6px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.linkIcons a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }

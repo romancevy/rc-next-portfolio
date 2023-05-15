@@ -1,8 +1,8 @@
 .container {
-  width: 60vw;
+  width: 45vw;
   margin-inline: auto;
   display: grid;
-  gap: 20px;
+  gap: 30px;
 }
 
 .avatarContainer {
@@ -12,10 +12,10 @@
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
 }
 
 .icon-container {
@@ -44,4 +44,23 @@
 
 .external-link svg {
   color: rgb(114, 114, 121);
+}
+
+.infoContainer {
+  display: grid;
+  gap: 10px;
+}
+
+.availableContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.available {
+  aspect-ratio: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: hsl(148, 100%, 32%);
 }

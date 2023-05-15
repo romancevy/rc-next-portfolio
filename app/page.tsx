@@ -24,7 +24,6 @@ const data = [
 export default function Home() {
   return (
     <main className="mainContainer">
-      <div>Projects</div>
       {data.map((project) => (
         <Project key={project.id} {...project} />
       ))}
