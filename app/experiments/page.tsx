@@ -1,7 +1,9 @@
-
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
-export default page
+    <>
+      <div>HELLO</div>
+    </>
+  );
+};
+
+export default page;

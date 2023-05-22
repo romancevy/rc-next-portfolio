@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "001",
-    title: "Project 1",
+    title: "VanLife",
     description: "Some coool Project bla bla bla",
     meta: ["NextJS", "TypeScript"],
     code: "X>",

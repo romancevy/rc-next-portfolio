@@ -1,14 +1,14 @@
-import Info from "@/components/Info";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import Nav from "@/components/Nav";
+import { Space_Grotesk } from "next/font/google";
 import { Metadata } from "next";
+import Info from "@/components/Info";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotestk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Projects",
 };
 
 export default function RootLayout({
@@ -18,10 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spaceGrotestk.className}>
         <Info />
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

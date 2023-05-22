@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import { useState, useEffect } from "react";
 import styles from "./Greeting.module.css";
 
 const SALUTATIONS = [
   "Hey!",
   "Hello",
   "Greetings!",
-  "Namaste",
+  "Bonjour",
   "Hola",
   "Hallo",
   "Ciao",
-  "Hei",
   "Aloha",
   "Hey There!",
   "Guten Tag :)",
@@ -20,12 +21,9 @@ const Greeting = () => {
   const [currentLetter, setCurrentLetter] = useState(0);
 
   useEffect(() => {
-    // const interval = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * SALUTATIONS.length);
-      setCurrentGreeting(SALUTATIONS[randomIndex]);
-      setCurrentLetter(0);
-    // }, 5000);
-    // return () => clearInterval(interval);
+    const randomIndex = Math.floor(Math.random() * SALUTATIONS.length);
+    setCurrentGreeting(SALUTATIONS[randomIndex]);
+    setCurrentLetter(0);
   }, []);
 
   useEffect(() => {

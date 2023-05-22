@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import avatar from "../public/avatar.png";
 import styles from "./Info.module.css";
@@ -9,7 +10,7 @@ import Greeting from "./Greeting";
 const Info = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.avatarContainer}>
+      <div className={styles["avatar-container"]}>
         {/* avatar */}
         <Image
           src={avatar}
@@ -17,7 +18,7 @@ const Info = () => {
           width={200}
           height={200}
           className={styles.avatar}
-          style={{ objectFit: "contain" }}
+          // style={{ objectFit: "contain" }}
         />
         {/* social */}
         <div className={styles["icon-container"]}>
@@ -32,16 +33,14 @@ const Info = () => {
       <div className={styles.infoContainer}>
         <Greeting />
         <p>
-          I&apos;m Roman, a Frontend focused Web Developer, helping build clean,
-          user-friendly and accessible applications on the web.
-          {/* Hi, I&apos;m Roman, a front-end web developer. I design and develop user-friendly
-          websites using HTML, CSS, and JavaScript. Let&apos;s create an amazing
-          website together! */}
+          I&apos;m Roman, a front-end focused web developer, helping build
+          clean, user-friendly and accessible applications on the web.
         </p>
         <p>
-          Usually work with Javascript/Typescript, within the React Ecosystem.
+          Usually working with JavaScript/TypeScript, within the React
+          ecosystem.
         </p>
-        <p>Tinkering with NodeJS, Figma & Animations.</p>
+        <p>Tinkering with NodeJS, Figma & CSS Animations.</p>
         <div className={styles.availableContainer}>
           <div className={styles.available}></div>
           <p>Available for new opportunities</p>

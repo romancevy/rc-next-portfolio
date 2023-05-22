@@ -1,36 +1,33 @@
+"use client";
 import Image from "next/image";
+import GithubLogo from "../public/github.svg";
+import GlobeLogo from "../public/globe.svg";
 import styles from "./Project.module.css";
+import Badge from "./Badge";
+
 // import Badge from "./Badge";
 
 const Project = ({ title, imgPath, tech }) => {
+  // console.log(tech);
   return (
-    <div className={styles.projectContainer}>
+    <div className={`${styles.projectContainer}`}>
+      {/* <h3>{title}</h3> */}
       <div className={styles.projectCard}>
-        {/* <h3>{title}</h3> */}
-        <div className={styles.imgContainer}>
-          <div className={styles.bar}>
-            <div className={styles.actionButtons}>
-              <div className={styles.dots}></div>
-              <div className={styles.dots}></div>
-              <div className={styles.dots}></div>
-            </div>
-            <div className={styles.searchBar}>{title}</div>
-            <div className={styles.linkIcons}>
-              <a href="">🌐</a>
-              <a href="">😺</a>
-            </div>
-          </div>
-          <Image
-            src={imgPath}
-            alt={title}
-            width={1300}
-            height={1000}
-            className={styles.image}
-          />
-        </div>
+        <Image
+          src={imgPath}
+          alt={title}
+          // 2389 × 1621
+          width={1200}
+          height={1200}
+          className={styles.image}
+        />
+        {/* </div> */}
         {/* <Badge /> */}
-        <p>{tech}</p>
+        <p className={styles.description}>Beschreibungstext</p>
       </div>
+      {/* <div> */}
+      <p className={styles.description2}>Beschreibungstext2</p>
+      {/* </div> */}
     </div>
   );
 };

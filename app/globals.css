@@ -4,24 +4,22 @@
 
 :root {
   /* colors */
-  --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%;
+  --text-clr: hsl(231 77% 90%);
+  --text-accent-clr: hsl(240, 100%, 75%);
+  --text-gray-clr: hsl(240, 3%, 46%);
+  --bg-base-clr: hsl(239, 10%, 6%);
+  --bg-accent-clr: hsl(240, 4%, 11%);
+  --darkblue-clr: hsl(229, 46%, 14%);
 
   /* font-sizes */
   --fs-900: 9.375rem;
   --fs-800: 6.25rem;
   --fs-700: 3.5rem;
   --fs-600: 2rem;
-  --fs-500: 1.75rem;
+  --fs-500: 1.475rem;
   --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
-
-  /* font-families */
-  --ff-serif: "Bellefair", serif;
-  --ff-sans-cond: "Barlow Condensed", sans-serif;
-  --ff-sans-normal: "Barlow", sans-serif;
 }
 
 /* ------------------- */
@@ -50,12 +48,6 @@ picture {
   margin: 0;
 }
 
-/* set up the body */
-body {
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
 /* make images easier to work with */
 img,
 picutre {
@@ -71,6 +63,20 @@ select {
   font: inherit;
 }
 
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: var(--bg-base-clr);
+  color: var(--text-clr);
+  padding: 30px 20px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 60px;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -83,62 +89,26 @@ select {
   }
 }
 
-/* DEV STYLING */
-
-body {
-  background-color: hsl(var(--clr-dark));
-  color: hsl(var(--clr-light));
-  /* padding-inline: 2em; */
-  /* padding: 2rem; */
-  /* margin-inline: auto; */
-  /* max-width: 80rem; */
-  aspect-ratio: auto;
-  /* display: grid;
-  align-items: center; */
-  width: auto;
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  flex-flow: column nowrap;
-  gap: 60px;
-  height: min-content;
-  padding: 80px 40px;
-}
-
-.mainContainer {
+.main-container {
+  width: 100%;
   display: grid;
-  gap: 40px;
-
-  /* width: min(70ch, 100% - 4rem); */
-  /* width: auto;
-  min-height: 100%;
-  display: flex; */
-  /* place-content: center flex-start; */
-  /* align-items: center;
-  flex-flow: column nowrap;
-  gap: 60px;
-  height: min-content;
-  padding: 80px 40px; */
-  /* margin-inline: auto;
-  display: grid;
-  justify-content: center; */
+  justify-content: center;
+  gap: 50px;
 }
 
-.framer-11Kvh .framer-72rtr7 {
-  place-content: center flex-start;
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 60px;
-  height: min-content;
-  overflow: visible;
-  padding: 80px 40px;
-  position: relative;
-  width: 800px;
+footer {
+  font-size: 0.8rem;
+  justify-self: flex-end;
 }
 
-@media screen and (max-height: 765px) {
+/* Medium devices */
+@media screen and (min-width: 768px) {
   body {
-    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding: 80px 40px;
   }
 }

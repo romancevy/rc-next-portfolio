@@ -10,8 +10,8 @@
 .greeting-underscore {
   position: relative;
   left: -0.1em;
+  /* 4x ausführen */
   animation: blink 0.85s cubic-bezier(0.4, 0, 0.6, 1) 4 forwards;
-  /* 3x ausführen */
 }
 
 @keyframes type {
@@ -23,11 +23,6 @@
   }
 }
 
-/* @keyframes blink {
-  50% {
-    opacity: 0;
-  }
-} */
 @keyframes blink {
   0% {
     opacity: 1;

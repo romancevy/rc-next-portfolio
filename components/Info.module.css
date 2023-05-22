@@ -1,21 +1,22 @@
 .container {
-  width: 45vw;
-  margin-inline: auto;
+  width: 100%;
   display: grid;
-  gap: 30px;
+  gap: 2rem;
+  font-size: var(--fs-500);
+  letter-spacing: -0.3px;
 }
 
-.avatarContainer {
+.avatar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-  /* aspect-ratio: 1; */
+  object-fit: contain;
 }
 
 .icon-container {
@@ -26,24 +27,24 @@
 
 .external-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 45px;
   height: 45px;
-  background-color: hsl(226, 5%, 11%);
+  background-color: var(--bg-accent-clr);
   padding: 2px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 
+.external-link svg {
+  display: block;
+  margin: auto;
+  color: var(--text-gray-clr);
+}
+
 .external-link:hover svg {
   transform: scale(1.04);
   opacity: 0.8;
-  color: powderblue;
-}
-
-.external-link svg {
-  color: rgb(114, 114, 121);
+  color: var(--text-accent-clr);
 }
 
 .infoContainer {
@@ -52,15 +53,20 @@
 }
 
 .availableContainer {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+.availableContainer > p {
+  font-size: var(--fs-300);
+  font-weight: 100;
+}
+
 .available {
-  aspect-ratio: 1;
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background-color: hsl(148, 100%, 32%);
+  background-color: hsl(148, 96%, 37%);
 }
