@@ -2,22 +2,44 @@ import Project from "@/components/Project";
 
 const data = [
   {
-    id: 1,
+    id: "001",
     title: "Application for Image generation",
-    imgPath: "/assets/projects/salvador.jpg",
-    tech: ["HTML", "CSS", "JavaScript", "TypeScript", "React"],
+    description:
+      "A Single-Page-Application for Image generation with OpenAI-API",
+    imgPath: "/assets/projects/dalle.jpg",
+    meta: [
+      "React",
+      "Tailwind",
+      "Express",
+      "MongoDB",
+      "OpenAI API",
+      "Cloudinary",
+    ],
+    site: "https://s-dalle.up.railway.app",
+    code: "https://github.com/romancevy/salvador-dalle-project",
+    wip: false,
   },
   {
-    id: 2,
-    title: "VANLIFE",
-    imgPath: "/assets/projects/vanlife.png",
-    tech: ["HTML", "CSS", "JavaScript", "TypeScript", "Vue"],
+    id: "002",
+    title: "Vanlife",
+    description:
+      "Frontend for a van rental portal as an exercise for the React Router v6.4",
+    imgPath: "/assets/projects/van.jpg",
+    meta: ["React", "React Router", "Express", "Mongoose", "MongoDB"],
+    site: "https://vanlife.up.railway.app",
+    code: "https://github.com/romancevy/vanlife-project",
+    wip: false,
   },
   {
-    id: 3,
+    id: "003",
     title: "Pokedex",
-    imgPath: "/assets/projects/pokemon.png",
-    tech: ["HTML", "CSS", "JavaScript", "TypeScript"],
+    description:
+      "An application to display Pokemon statistics using the Poke API",
+    imgPath: "/assets/projects/pokedex.jpg",
+    meta: ["React", "CSS", "Poke API"],
+    site: "https://pokedex-supercode.netlify.app",
+    code: "https://github.com/romancevy/project-pokemonAPI",
+    wip: false,
   },
 ];
 

@@ -6,7 +6,7 @@
   /* colors */
   --text-clr: hsl(231 77% 90%);
   --text-accent-clr: hsl(240, 100%, 75%);
-  --text-gray-clr: hsl(240, 3%, 46%);
+  --text-gray-clr: hsl(240, 5%, 64%);
   --bg-base-clr: hsl(239, 10%, 6%);
   --bg-accent-clr: hsl(240, 4%, 11%);
   --darkblue-clr: hsl(229, 46%, 14%);
@@ -91,22 +91,26 @@ body {
 
 .main-container {
   width: 100%;
+  min-height: 100%;
   display: grid;
   justify-content: center;
   gap: 50px;
 }
 
 footer {
-  font-size: 0.8rem;
+  font-size: var(--fs-200);
+  font-weight: 100;
   justify-self: flex-end;
 }
 
 /* Medium devices */
 @media screen and (min-width: 768px) {
   body {
+    padding: 60px 40px;
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 992px) {
   body {
     padding: 80px 40px;

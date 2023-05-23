@@ -1,11 +1,13 @@
 .badge {
   display: inline-flex;
   align-items: center;
-  border-radius: 0.375rem; /* Tailwind: rounded-md */
-  background-color: var(--bg-clr); /* Tailwind: bg-gray-50 */
-  padding: 0.5rem 0.75rem; /* Tailwind: px-2 py-1 */
-  font-size: 0.75rem; /* Tailwind: text-xs */
-  font-weight: 500; /* Tailwind: font-medium */
-  color: var(--text-clr); /* Tailwind: text-gray-600 */
-  border: 1px solid rgba(113, 128, 150, 0.1); /* Tailwind: ring-1 ring-inset ring-gray-500/10 */
+  color: var(--text-gray-clr);
+  background-color: var(--bg-accent-clr);
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: var(--fs-200);
+  font-weight: 600;
+  border: 1px solid var(--text-gray-clr);
+  pointer-events: none;
+  user-select: none;
 }

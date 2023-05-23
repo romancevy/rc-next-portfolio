@@ -20,6 +20,7 @@ const Greeting = () => {
   const [currentGreeting, setCurrentGreeting] = useState("");
   const [currentLetter, setCurrentLetter] = useState(0);
 
+  //Setzen eines zufälligen Begrüßungstexts und Zurücksetzen des aktuellen Buchstabens beim Initialisieren der Komponente
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * SALUTATIONS.length);
     setCurrentGreeting(SALUTATIONS[randomIndex]);
@@ -27,9 +28,11 @@ const Greeting = () => {
   }, []);
 
   useEffect(() => {
+    // Erhöhen des aktuellen Buchstabens in regelmäßigen Abständen von 200 Millisekunden
     const interval = setInterval(() => {
       setCurrentLetter((prev) => prev + 1);
     }, 200);
+    // Cleanup
     return () => clearInterval(interval);
   }, [currentGreeting]);
 

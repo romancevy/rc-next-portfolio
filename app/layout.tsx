@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./global.css";
 import { Space_Grotesk } from "next/font/google";
 import { Metadata } from "next";
 import Info from "@/components/Info";

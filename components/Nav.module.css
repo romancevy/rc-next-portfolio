@@ -6,9 +6,9 @@
 }
 
 .menuLink {
-  /* background-color: rgb(50, 50, 67); */
-  border-radius: 14px;
   text-decoration: none;
+  font-size: var(--fs-400);
+  border-radius: 14px;
   opacity: 1;
   display: flex;
   flex-wrap: nowrap;
@@ -20,30 +20,27 @@
 }
 
 .menuLink:hover {
-  background-color: #1b1b1d;
+  background-color: var(--bg-accent-clr);
 }
 
 .menuLink svg {
-  color: grey;
+  color: var(--text-gray-clr);
 }
 
 .menuLink p {
-  color: grey;
+  color: var(--text-gray-clr);
 }
 
 .menuLink.selected {
   background-color: rgb(50, 50, 67);
 }
 .selected svg {
-  /* fill: hsl(240, 100%, 75%); */
-  color: hsl(240, 100%, 75%);
+  color: var(--text-accent-clr);
 }
 
 .selected p {
-  color: hsl(240, 100%, 75%);
+  color: var(--text-accent-clr);
 }
-
-/* rgb(114, 114, 121); */
 
 @media screen and (max-width: 765px) {
   .nav {

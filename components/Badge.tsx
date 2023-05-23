@@ -1,9 +1,13 @@
 import styles from "./Badge.module.css";
 
-const Badge = ({ meta }) => {
+interface BadgeProps {
+  tech: string;
+}
+
+const Badge = ({ tech }: BadgeProps) => {
   return (
     <div>
-      <span className={styles.badge}>JavaScript</span>
+      <span className={styles.badge}>{tech}</span>
     </div>
   );
 };
