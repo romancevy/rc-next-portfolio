@@ -1,7 +1,7 @@
 const page = () => {
   return (
     <>
-      <div>HELLO</div>
+      <div>🚧 Under construction 🚧</div>
     </>
   );
 };
