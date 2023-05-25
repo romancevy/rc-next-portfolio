@@ -22,10 +22,18 @@ const Info = () => {
         />
         {/* social */}
         <div className={styles["icon-container"]}>
-          <a href="#" className={styles["external-link"]}>
+          <a
+            href="https://github.com/romancevy"
+            target="_blank"
+            className={styles["external-link"]}
+          >
             <GithubIcon />
           </a>
-          <a href="#" className={styles["external-link"]}>
+          <a
+            href="https://www.linkedin.com/in/roman-cevelev"
+            target="_blank"
+            className={styles["external-link"]}
+          >
             <LinkedInIcon />
           </a>
         </div>

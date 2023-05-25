@@ -39,7 +39,7 @@
 .external-link svg {
   display: block;
   margin: auto;
-  color: var(--text-gray-clr);
+  color: var(--text-secondary-clr);
 }
 
 .external-link:hover svg {
@@ -54,10 +54,15 @@
 }
 
 .availableContainer {
+  width: max-content;
+  padding-inline: 8px;
   margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 10px;
+
+  border: 0.04em solid var(--text-secondary-clr);
+  border-radius: 999px;
 }
 
 .availableContainer > p {

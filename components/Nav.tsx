@@ -21,7 +21,7 @@ const Nav = () => {
         <FolderIcon />
         <p>Projects</p>
       </Link>
-      <Link
+      {/* <Link
         href="/experiments"
         className={`${styles.menuLink} ${
           pathname === "/experiments" ? styles.selected : ""
@@ -31,14 +31,14 @@ const Nav = () => {
         <p>Experiments</p>
       </Link>
       <Link
-        href="/media"
+        href="/bookmarks"
         className={`${styles.menuLink} ${
-          pathname === "/media" ? styles.selected : ""
+          pathname === "/bookmarks" ? styles.selected : ""
         }`}
       >
         <BookmarkIcon />
         <p>Bookmarks</p>
-      </Link>
+      </Link> */}
     </nav>
   );
 };

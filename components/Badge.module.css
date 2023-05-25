@@ -1,13 +1,13 @@
 .badge {
   display: inline-flex;
   align-items: center;
-  color: var(--text-gray-clr);
+  color: var(--text-secondary-clr);
   background-color: var(--bg-accent-clr);
   border-radius: 0.375rem;
   padding: 0.5rem 0.75rem;
   font-size: var(--fs-200);
   font-weight: 600;
-  border: 1px solid var(--text-gray-clr);
+  border: 1px solid var(--text-secondary-clr);
   pointer-events: none;
   user-select: none;
 }

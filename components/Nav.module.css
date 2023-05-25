@@ -24,15 +24,15 @@
 }
 
 .menuLink svg {
-  color: var(--text-gray-clr);
+  color: var(--text-secondary-clr);
 }
 
 .menuLink p {
-  color: var(--text-gray-clr);
+  color: var(--text-secondary-clr);
 }
 
 .menuLink.selected {
-  background-color: rgb(50, 50, 67);
+  background-color: var(--select-clr);
 }
 .selected svg {
   color: var(--text-accent-clr);
