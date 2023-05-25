@@ -5,6 +5,7 @@ import avatar from "../public/avatar.png";
 import styles from "./Info.module.css";
 import GithubIcon from "../public/github.svg";
 import LinkedInIcon from "../public/linkedin.svg";
+import CodenPenIcon from "../public/codepen.svg";
 import Greeting from "./Greeting";
 
 const Info = () => {
@@ -22,6 +23,13 @@ const Info = () => {
         />
         {/* social */}
         <div className={styles["icon-container"]}>
+          <a
+            href="https://codepen.io/roman-c"
+            target="_blank"
+            className={styles["external-link"]}
+          >
+            <CodenPenIcon />
+          </a>
           <a
             href="https://github.com/romancevy"
             target="_blank"
